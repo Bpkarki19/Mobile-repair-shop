@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script src="index.js" defer></script>
+    <title>CPS Services</title>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div id="sidebar" class="sidebar">
+        <header class="sidebar-header">
+          <!--cancel_button-->
+          <button id="cancel-button" class="icon-button">
+            <img src="./images/cancel.svg" alt="cancel" />
+          </button>
+          <a href="#" class="logo">
+            <img src="./images/cps_logo.svg" alt="logo" />
+          </a>
+          <button class="icon-button">
+            <img src="./images/search_icon.svg" alt="search" />
+          </button>
+        </header>
+
+        <main class="sidebar-content">
+          <ul class="sidebar-list">
+            <li class="active"><a href="#">Equipment Repair</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Corporate Clients</a></li>
+            <li><a href="#">Equipment Sellers</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Manufacturers</a></li>
+            <li><a href="#">Our Service Centers</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </main>
+
+        <footer class="sidebar-footer">
+          <div class="icon-bar">
+            <button class="icon-button">
+              <img src="./images/call.svg" alt="call" />
+            </button>
+            <button class="icon-button">
+              <img src="./images/chat.svg" alt="chat" />
+            </button>
+            <button class="icon-button">
+              <img src="./images/profile.svg" alt="profile" />
+            </button>
+          </div>
+          <a class="email" href="mailto:mail@cps.com">mail@cps.com</a>
+          <a class="phone" href="tel:88008908900">8 800 890 8900</a>
+          <div class="language-switcher">
+            <a href="#">RU</a>
+            <a href="#" class="active">EN</a>
+            <a href="#">CH</a>
+          </div>
+        </footer>
+      </div>
+      <div id="main-section" class="main-section">
+        <header class="header">
+          <div class="header__left">
+            <!-- ham burger-->
+            <button id="ham-burger" class="icon-button show-on-tablet">
+              <img src="./images/ham_burger.svg" alt="Menu" />
+            </button>
+            <div class="divider show-on-tablet"></div>
+            <img
+              class="header__logo show-on-tablet"
+              src="./images/cps_logo.svg"
+              alt="CPS Logo"
+            />
+          </div>
+
+          <div class="header__right">
+            <!-- _________call-icon______________chat-icon__________profile-icon_____________-->
+            <button class="icon-button hide-on-mobile show-on-tablet">
+              <img src="./images/call.svg" alt="Call" />
+            </button>
+            <button class="icon-button hide-on-mobile show-on-tablet">
+              <img src="./images/chat.svg" alt="Chat" />
+            </button>
+            <button class="icon-button hide-on-mobile show-on-tablet">
+              <img src="./images/profile.svg" alt="Profile" />
+            </button>
+
+            <!-- ____________divider____________repair-icon____________search-icon_______________________________________ -->
+            <div class="divider show-on-desktop"></div>
+            <span class="show-on-desktop">Leave a request</span>
+            <button class="icon-button">
+              <img src="./images/ic_repair.svg" alt="Repair Status" />
+            </button>
+            <span class="show-on-desktop">Repair Status</span>
+            <button class="icon-button">
+              <img src="./images/search_icon.svg" alt="Search" />
+            </button>
+          </div>
+        </header>
+
+        <!-- main content area -->
+        <main class="main-content">
+          <div class="sub-header">
+            <h1 class="main-title">Services</h1>
+
+            <!-- ______icons__________for__________desktop_________only_________________-->
+            <div class="show-on-desktop">
+              <span>Leave a request</span>
+              <button class="icon-button">
+                <img src="./images/ic_repair.svg" alt="Repair Status" />
+              </button>
+              <span>Repair Status</span>
+              <button class="icon-button">
+                <img src="./images/search_icon.svg" alt="Search" />
+              </button>
+            </div>
+          </div>
+
+          <!-- Navigation tabs -->
+          <nav class="tabs-nav">
+            <button class="tab-button active">Brands We Repair</button>
+            <button class="tab-button">Additional Services</button>
+            <button class="tab-button">Pricing</button>
+            <button class="tab-button">Special Offers</button>
+            <button class="tab-button">Our Locations</button>
+            <button class="tab-button">Special price</button>
+            <button class="tab-button">Reviews</button>
+            <button class="tab-button">About us</button>
+          </nav>
+
+          <!-- content block -->
+          <div class="content-block">
+            <div class="text-section">
+              <p>
+                We are an authorized service center for Dell equipment repair.
+                Only with us can you repair your Dell laptop with an official
+                manufacturer's warranty.
+              </p>
+              <p class="show-on-tablet hide-on-mobile">
+                We have been successfully operating since 1992 and have earned a
+                reputation as a reliable partner. We have all the necessary
+                certificates and licenses to carry out repair work on Dell
+                equipment.
+              </p>
+              <p class="show-on-desktop">
+                Our specialists undergo regular training and certification at
+                the manufacturer's training centers, which allows us to keep up
+                to date with the latest technologies and methods of repairing
+                Dell equipment.
+              </p>
+              <a href="#" class="read-more">
+                <img src="./images/expand_arrow.svg" alt="expand" /> Read More
+              </a>
+            </div>
+            <div class="image-section">
+              <img
+                class="content-image"
+                src="./images/image.png"
+                alt="CPS Office Sign"
+              />
+            </div>
+          </div>
+        </main>
+
+        <div class="container-for-swiper-and-grid">
+          <div class="top__border"></div>
+          <div id="swiper1" class="sub-container">
+            <div class="heading__container">
+              <h1>Repair of equipments of various brands.</h1>
+            </div>
+            <!--___________________________________swiper BLOCK_________________________-->
+            <div class="swiper-container">
+              <!--swiper first-->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide company__logo">
+                  <img src="./images/1.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo">
+                  <img src="./images/2.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo">
+                  <img src="./images/3.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo">
+                  <img src="./images/4.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo">
+                  <img src="./images/5.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo">
+                  <img src="./images/9.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo">
+                  <img src="./images/7.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo">
+                  <img src="./images/8.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo">
+                  <img src="./images/9.png" />
+                  <img src="./images/go.svg" />
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="grid-container-wrapper">
+              <div class="grid-container">
+                <div class="grid-item company__logo">
+                  <img src="./images/1.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo">
+                  <img src="./images/2.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo">
+                  <img src="./images/3.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo">
+                  <img src="./images/4.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo">
+                  <img src="./images/5.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo">
+                  <img src="./images/6.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo">
+                  <img src="./images/7.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo">
+                  <img src="./images/8.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo hidden">
+                  <img src="./images/9.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo hidden">
+                  <img src="./images/6.png" />
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo hidden">
+                  <img src="./images/7.png" />
+                  <img src="./images/go.svg" />
+                </div>
+                <div class="grid-item company__logo hidden">
+                  <img src="./images/1.png" />
+                  <img src="./images/go.svg" />
+                </div>
+              </div>
+
+              <button id="toggle__button" class="read-more">
+                <img src="./images/read_more.svg" alt="Read More" />
+                <span>Show More</span>
+              </button>
+            </div>
+
+            <!-- Link Swiper's JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+              var swiper = new Swiper(".swiper-container", {
+                slidesPerView: "auto",
+                spaceBetween: 10,
+                loop: true,
+                freeMode: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+              });
+            </script>
+          </div>
+          <div id="swipe2" class="sub-container">
+            <div class="heading__container">
+              <h1>Repair of equipments of various brands.</h1>
+            </div>
+            <!--___________________________________swiper BLOCK_________________________-->
+            <div class="swiper-container">
+              <!--swiper first-->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="swiper-slide company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="grid-container-wrapper">
+              <div class="grid-container">
+                <div class="grid-item company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo--second">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo--second hidden">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo--second hidden">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+
+                <div class="grid-item company__logo--second hidden">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+                <div class="grid-item company__logo--second hidden">
+                  <span>Text</span>
+                  <img src="./images/go.svg" />
+                </div>
+              </div>
+
+              <button id="toggle__button" class="read-more">
+                <img src="./images/read_more.svg" alt="Read More" />
+                <span>Show More</span>
+              </button>
+            </div>
+
+            <!-- Link Swiper's JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+              var swiper = new Swiper(".swiper-container", {
+                slidesPerView: "auto",
+                spaceBetween: 10,
+                loop: true,
+                freeMode: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+              });
+            </script>
+          </div>
+
+          <!--container ends-->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
