@@ -1,0 +1,137 @@
+.sidebar {
+  width: 320px;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 24px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2),
+    -2px 0 4px rgba(69, 79, 126, 0.02);
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.logo {
+  margin-left: 20px;
+  margin-right: auto; /* Pushing the search icon to the right */
+}
+
+.icon-button {
+  background-color: #ff3e79;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s ease;
+}
+
+.icon-button:hover {
+  opacity: 0.8;
+}
+
+/* Main Content - Navigation List */
+.sidebar-content {
+  flex-grow: 1; /* pushing the footer to the bottom */
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list li {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.sidebar-list a {
+  text-decoration: none;
+  color: #1b1c21;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.sidebar-list a:hover {
+  color: #7e7e82;
+}
+
+/* Active state for navigation item */
+.sidebar-list li.active a {
+  color: #7e7e82;
+}
+
+.sidebar-list li.active::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: -5px;
+  bottom: -5px;
+  width: 4px;
+  background-color: #41f6d7;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* Footer Section */
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-bar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.email {
+  color: #1b1c21;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.phone {
+  color: #1b1c21;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: -0.6px;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 7px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.language-switcher a {
+  text-decoration: none;
+  color: #1b1c21;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.language-switcher a:hover {
+  color: #7e7e82;
+}
+
+.language-switcher a.active {
+  color: #7e7e82;
+}

@@ -1,0 +1,12 @@
+@use 'variable' as *;
+@use 'container';
+@use 'sidebar';
+@use 'main';
+
+body {
+  padding: 1rem;
+  margin: 0;
+  font-family: Comic, sans-serif;
+  background-color: $bgColor;
+  color: $text;
+}
