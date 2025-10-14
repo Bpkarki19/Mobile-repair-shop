@@ -1,12 +1,33 @@
 @use 'variable' as *;
-@use 'container';
 @use 'sidebar';
-@use 'main';
+@use 'header';
+@use 'content';
 
 body {
+  display: flex;
   padding: 0px;
   margin: 0;
   font-family: Comic, sans-serif;
   background-color: $bgColor;
   color: $text;
+}
+
+.main {
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+}
+
+.container {
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  position: fixed;
+  left: 320px;
+  min-width: 100%;
+  display: flex;
+  min-height: 100vh;
 }

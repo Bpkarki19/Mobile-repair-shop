@@ -7,60 +7,116 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./js/index.js"></script>
     <title>Mobile repair shop</title>
   </head>
   <body>
-    <div class="main">
-      <div class="sidebar">
+    <main class="main">
+      <div class="sidebar" id="sidebar">
         <header class="sidebar__header">
-            <button class="icon-button">
-                <img src="./img/cancel.svg" alt="cancel" >
-            </button>
-            <a href="#" class="logo">
-                <img src="./img/cps_logo.svg" alt="logo">
-            </a>
-            <button class="icon-button">
-                <img src="./img/search_icon.svg" alt="search">
-            </button>
+          <button class="icon-button" id="cancel-button">
+            <img src="./img/cancel.svg" alt="cancel" />
+          </button>
+          <a href="#" class="logo">
+            <img src="./img/cps_logo.svg" alt="logo" />
+          </a>
+          <button class="icon-button">
+            <img src="./img/search_icon.svg" alt="search" />
+          </button>
         </header>
 
-        <main class="sidebar__content">
-            <ul class="sidebar-list">
-                <li class="active"><a href="#">Equipment Repair</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Corporate Clients</a></li>
-                <li><a href="#">Equipment Sellers</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Manufacturers</a></li>
-                <li><a href="#">Our Service Centers</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </main>
+        <div class="sidebar__content">
+          <ul class="sidebar-list">
+            <li class="active"><a href="#">Equipment Repair</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Corporate Clients</a></li>
+            <li><a href="#">Equipment Sellers</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Manufacturers</a></li>
+            <li><a href="#">Our Service Centers</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </div>
 
         <footer class="sidebar__footer">
-            <div class="icon-bar">
-                <button class="icon-button">
-                    <img src="./img/call.svg" alt="call" >
-                </button>
-                <button class="icon-button">
-                    <img src="./img/chat.svg" alt="chat">
-                </button>
-                <button class="icon-button">
-                    <img src="./img/profile.svg" alt="profile">
-                </button>
-            </div>
-            <a class="email" href="mailto:mail@cps.com">mail@cps.com</a>
-            <a class="phone" href="tel:88008908900">8 800 890 8900</a>
-            <div class="language-switcher">
-                <a href="#">RU</a>
-                <a href="#" class="active">EN</a>
-                <a href="#">CH</a>
-            </div>
+          <div class="icon-bar">
+            <button class="icon-button">
+              <img src="./img/call.svg" alt="call" />
+            </button>
+            <button class="icon-button">
+              <img src="./img/chat.svg" alt="chat" />
+            </button>
+            <button class="icon-button">
+              <img src="./img/profile.svg" alt="profile" />
+            </button>
+          </div>
+          <a class="email" href="mailto:mail@cps.com">mail@cps.com</a>
+          <a class="phone" href="tel:88008908900">8 800 890 8900</a>
+          <div class="language-switcher">
+            <a href="#">RU</a>
+            <a href="#" class="active">EN</a>
+            <a href="#">CH</a>
+          </div>
         </footer>
       </div>
-      <div class="container"> 
-        <headr></header>
+      <div class="container">
+        <!--header-->
+        <header class="header">
+          <div class="header__left">
+            <!-- ham burger-->
+            <button id="ham-burger" class="icon-button show-on-tablet">
+              <img src="./img/ham_burger.svg" alt="Menu" />
+            </button>
+            <div class="divider show-on-tablet"></div>
+            <img
+              class="header__logo show-on-tablet"
+              src="./img/cps_logo.svg"
+              alt="CPS Logo"
+            />
+          </div>
+
+          <div class="header__right">
+            <!-- _________call-icon______________chat-icon__________profile-icon_____________-->
+            <button class="icon-button hide-on-mobile show-on-tablet">
+              <img src="./img/call.svg" alt="Call" />
+            </button>
+            <button class="icon-button hide-on-mobile show-on-tablet">
+              <img src="./img/chat.svg" alt="Chat" />
+            </button>
+            <button class="icon-button hide-on-mobile show-on-tablet">
+              <img src="./img/profile.svg" alt="Profile" />
+            </button>
+
+            <!-- ____________divider____________repair-icon____________search-icon_______________________________________ -->
+            <div class="divider show-on-desktop"></div>
+            <span class="leave__request">Leave a request</span>
+            <button class="icon-button">
+              <img src="./img/ic_repair.svg" alt="Repair Status" />
+            </button>
+            <span class="repair__status">Repair Status</span>
+            <button class="icon-button">
+              <img src="./img/search_icon.svg" alt="Search" />
+            </button>
+          </div>
+        </header>
+        <div class="content">
+          <div class="sub-header">
+            <h1 class="title">Services</h1>
+
+            <!-- ______icons__________for__________desktop_________only_________________-->
+            <div class="icons">
+              <span>Leave a request</span>
+              <button class="icon-button">
+                <img src="./img/ic_repair.svg" alt="Repair Status" />
+              </button>
+              <span>Repair Status</span>
+              <button class="icon-button">
+                <img src="./img/search_icon.svg" alt="Search" />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>

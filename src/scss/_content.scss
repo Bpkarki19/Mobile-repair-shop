@@ -1,0 +1,57 @@
+.content {
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  padding-top: 24px;
+  margin: 0px;
+  background-color: #41f6d7;
+}
+
+.sub-header {
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 20px;
+  background-color: rgb(229, 168, 168);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.title {
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 24px 0;
+  position: relative;
+  padding-left: 12px;
+  color: #7e7e82;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  left: 0px; /* position outside of padding so that it aligns with mobile screen edge*/
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #41f6d7;
+  border-radius: 0 4px 4px 0;
+  padding-left: 2px;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto; /* for scrolling form left to right */
+  padding-bottom: 16px; /* Space for scrollbar */
+  margin-bottom: 24px;
+  padding-left: 12px; /* Aligns with main title */
+}
