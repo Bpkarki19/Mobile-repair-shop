@@ -1,0 +1,27 @@
+@use 'variable' as *;
+.tabs-nav {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto; /* for scrolling form left to right */
+  padding-bottom: 16px; /* Space for scrollbar */
+  margin-bottom: 24px;
+  padding-left: 12px; /* Aligns with main title */
+}
+
+.tab-button {
+  padding: 12px 24px; /* Larger padding for tab buttons */
+  border: none;
+  background: none;
+}
+
+.tab-button.active {
+  border-color: $activeBorderColor;
+}
+
+@media (min-width: 1120px) {
+  .tabs-nav {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+  }
+}
