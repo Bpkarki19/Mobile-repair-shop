@@ -9,8 +9,18 @@
 }
 
 .tab-button {
-  padding: 12px 24px; /* Larger padding for tab buttons */
-  border: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding: 8px 16px; /* Larger padding for tab buttons */
+  border: 2px solid transparent;
+  border-radius: 6px;
+  color: #7e7e82;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  transition: all 0.2s ease-in-out;
+
   background: none;
 }
 
@@ -23,5 +33,6 @@
     display: flex;
     flex-wrap: wrap;
     overflow-y: hidden;
+    height: auto;
   }
 }
