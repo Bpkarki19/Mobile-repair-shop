@@ -30,9 +30,6 @@
 
 @media (min-width: 1120px) {
   .tabs-nav {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-y: hidden;
-    height: auto;
+    padding: 12px 24px;
   }
 }

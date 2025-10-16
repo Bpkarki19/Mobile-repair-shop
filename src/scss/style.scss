@@ -4,6 +4,7 @@
 @use 'tabs-nav';
 @use 'sub-header';
 @use 'text-and-image';
+@use 'swiper';
 
 body {
   display: flex;
@@ -16,7 +17,7 @@ body {
 
 .main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
 }
 
@@ -35,6 +36,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .main {
+    width: 100%;
+  }
   .container {
     width: 100%;
   }
@@ -48,5 +52,7 @@ body {
   .container {
     display: flex;
     flex-direction: column;
+    min-width: 80%;
+    flex-wrap: wrap;
   }
 }

@@ -24,7 +24,6 @@
 
 .text-section {
   flex: 1; /* Allows text section to grow */
-  min-width: 300px; /* Prevents it from getting too squished */
   font-size: 14px;
   line-height: 20px;
   padding-left: 12px; /* Aligns with main title */
@@ -47,6 +46,7 @@
 
 .image-section {
   flex: 1; /* Allows image section to grow */
+  width: 100%;
 }
 
 @media (min-width: 768px) {
