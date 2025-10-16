@@ -5,6 +5,7 @@
 @use 'sub-header';
 @use 'text-and-image';
 @use 'swiper';
+@use 'grid';
 
 body {
   display: flex;
@@ -28,8 +29,6 @@ body {
 }
 
 .content {
-  flex-wrap: wrap;
-  display: flex;
   width: 100%;
   padding-top: 24px;
   margin: 0px;
