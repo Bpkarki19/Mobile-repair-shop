@@ -1,8 +1,10 @@
 @use 'variable' as *;
 
 .sidebar {
-  flex-direction: column;
+  display: flex;
   position: fixed;
+  flex-direction: column;
+
   top: 0;
   left: -320px;
   width: 320px;
@@ -158,12 +160,19 @@
 @media (min-width: 1120px) {
   .sidebar {
     display: flex;
-    height: 100vh;
-    min-width: 320px;
-    position: static;
-    left: 0;
-    box-shadow: none;
-    z-index: auto;
-    transition: none;
+    position: sticky;
+    flex-direction: column;
+
+    top: 0;
+    left: -320px;
+    width: 320px;
+    min-height: 100vh;
+    background-color: $sidebarBg;
+    padding: 16px 24px 32px 24px;
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
   }
 }

@@ -33,6 +33,23 @@
   padding: 0px 16px 0px 16px;
 }
 
+.swiper-slide--second {
+  display: flex;
+  position: relative;
+  display: flex;
+  width: 240px;
+  height: 160px;
+  background-color: #fff;
+}
+.swiper-slide--second #go__logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
 .swiper-pagination {
   position: absolute;
   top: 0;
