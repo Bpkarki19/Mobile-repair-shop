@@ -74,15 +74,6 @@
   padding: 0 16px;
 }
 
-.swiper__heading {
-  display: flex;
-  width: 100%; /* Ensure it takes full width of its parent to apply padding correctly */
-  padding-left: 16px;
-  margin-bottom: 24px;
-  background: linear-gradient(to right, #f8f8f8, #ffffff);
-  height: 56px;
-}
-
 @media (min-width: 768px) {
   .swiper {
     display: none;

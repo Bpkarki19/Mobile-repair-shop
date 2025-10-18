@@ -14,7 +14,13 @@
   grid-gap: 50px;
 }
 
-.company__logo {
+.grid__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 16px 0px 16px;
+
   position: relative;
   display: flex;
   flex-direction: row;
@@ -29,10 +35,6 @@
   gap: 24px;
 }
 
-.grid-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 16px 0px 16px;
+.grid__item--hidden {
+  display: none;
 }
