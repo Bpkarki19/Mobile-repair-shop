@@ -12,6 +12,15 @@
   box-sizing: border-box; /* Include padding and border in the height */
 }
 
+.call,
+.chat,
+.profile,
+.leave__request,
+.repair__status,
+.divider {
+  display: none;
+}
+
 .header__left,
 .header__right {
   display: flex;
@@ -34,22 +43,38 @@
   border-radius: 50%;
 }
 
-.divider {
-  width: 1px;
-  height: 32px;
-  background-color: #eaeaea;
-  border-radius: 1px;
-}
-
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .header {
+    display: flex;
+  }
+  .leave__request,
+  .repair__status {
     display: none;
+  }
+
+  .call,
+  .chat,
+  .profile {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ff3e79;
+    border: none;
+    border-radius: 50%;
+  }
+  .divider {
+    width: 1px;
+    height: 32px;
+    background-color: #eaeaea;
+    border-radius: 1px;
   }
 }
 
-@media (max-width: 768px) {
-  .leave__request,
-  .repair__status {
+@media (min-width: 1120px) {
+  .header {
     display: none;
   }
 }
