@@ -47,3 +47,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const readMoreBtn = document.getElementById('read-more');
+  const moreText = document.getElementById('more-text');
+  const readMoreTxt = document.getElementById('read__more--btn');
+  readMoreBtn.addEventListener('click', () => {
+    console.log(moreText);
+    if (moreText.style.display === 'none') {
+      moreText.style.display = 'flex';
+      readMoreTxt.textContent = 'Read less';
+    } else {
+      moreText.style.display = 'none';
+    }
+  });
+});
