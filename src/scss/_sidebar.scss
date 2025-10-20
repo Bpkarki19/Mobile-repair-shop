@@ -161,6 +161,7 @@
   .sidebar {
     display: flex;
     position: sticky;
+    height: 100vh;
     flex-direction: column;
 
     top: 0;

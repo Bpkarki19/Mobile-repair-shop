@@ -1,0 +1,23 @@
+.grid__item--second {
+  flex: 0 0 240px;
+  flex-direction: row;
+  position: relative;
+  width: 240px;
+  height: 160px;
+  background-color: #fff;
+  align-items: center;
+}
+
+.grid__item--second > :first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px 0px 0px 16px;
+}
+
+.grid__item--second > :nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0px 16px 16px 0px;
+}
