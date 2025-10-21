@@ -9,6 +9,9 @@
 @use 'table';
 @use 'heading';
 @use 'grid__item--second';
+@use 'toggle__button';
+@use 'footer';
+@use 'copyright';
 
 body {
   display: flex;

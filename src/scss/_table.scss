@@ -1,126 +1,135 @@
-.table-container {
-  width: 100%;
-  margin: 40px auto;
+@use 'variable' as *;
+
+.swiper__slide--table {
+  position: relative;
+  width: 228px;
+  height: auto;
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  padding: 30px;
-}
-
-h2 {
-  font-size: 26px;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.price-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-.price-table th,
-.price-table td {
-  padding: 18px 0;
+  justify-content: flex-start;
   text-align: left;
-  border-bottom: 1px solid #eee;
 }
 
-.price-table th {
-  font-weight: 600;
-  color: #666;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-.price-table td {
-  font-size: 16px;
-  color: #555;
-  vertical-align: middle;
-}
-
-.price-table tr:last-child td {
-  border-bottom: none;
-}
-
-.service-name {
+.swiper__slide--table br:nth-of-type(1),
+br:nth-of-type(3),
+br:nth-of-type(5) {
+  color: $deemText;
   font-weight: 500;
-}
-
-.price {
-  font-weight: 600;
-  color: #333;
-  width: 150px;
-}
-
-.duration {
-  color: #777;
-  width: 120px;
-}
-
-.order-button {
-  background-color: #e91e63;
-  color: #fff;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 25px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  text-decoration: none;
-  width: 130px; /* Fixed width for consistency */
-}
-
-.order-button:hover {
-  background-color: #d81b60;
-}
-
-.order-button svg {
-  fill: #fff;
-  width: 16px;
-  height: 16px;
-}
-
-.notes {
-  margin-top: 40px;
   font-size: 14px;
-  color: #777;
-  line-height: 1.6;
-  padding-top: 20px;
-  border-top: 1px solid #eee;
+  line-height: 16px;
+  letter-spacing: 0px;
 }
 
-.commercial-offer {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: #e91e63;
-  font-weight: 600;
-  text-decoration: none;
-  margin-top: 20px;
-  font-size: 16px;
-  transition: color 0.3s ease;
+.swiper__slide--table br:nth-of-type(2),
+br:nth-of-type(4),
+br:nth-of-type(6) {
+  color: $darkText;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+@media (max-width: 768px) {
+  .table-container {
+    display: none;
+  }
 }
 
-.commercial-offer:hover {
-  color: #d81b60;
-}
+@media (min-width: 1120px), (min-width: 768px) {
+  .table-container {
+    width: 100%;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+  }
 
-.commercial-offer svg {
-  fill: #e91e63;
-  width: 18px;
-  height: 18px;
-  transition: fill 0.3s ease;
-}
+  h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
 
-.commercial-offer:hover svg {
-  fill: #d81b60;
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  .price-table th,
+  .price-table td {
+    padding: 18px 0;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+
+  .price-table td {
+    padding-left: 20px;
+  }
+
+  .price-table th {
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .price-table td {
+    font-size: 16px;
+    color: #555;
+    vertical-align: middle;
+  }
+
+  .price-table tbody {
+    background-color: white;
+  }
+
+  .price-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .service-name {
+    font-weight: 500;
+  }
+
+  .price {
+    font-weight: 600;
+    color: #333;
+    width: 150px;
+  }
+
+  .duration {
+    color: #777;
+    width: 120px;
+  }
+
+  .order-button {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    width: 130px; /* Fixed width for consistency */
+  }
+
+  .order-button:hover {
+    background-color: #d81b60;
+  }
+
+  .order-button svg {
+    fill: #fff;
+    width: 16px;
+    height: 16px;
+  }
 }
