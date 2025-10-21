@@ -7,6 +7,7 @@
   background-color: #fff;
   justify-content: flex-start;
   text-align: left;
+  padding: 16px;
 }
 
 .swiper__slide--table br:nth-of-type(1),
@@ -27,6 +28,40 @@ br:nth-of-type(6) {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
+}
+
+.order__button--second {
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  width: 130px; /* Fixed width for consistency */
+
+  /**/
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 32px;
+}
+
+.order__button--second:hover {
+  background-color: #d81b60;
+}
+
+.order__button--second svg {
+  fill: #fff;
+  width: 16px;
+  height: 16px;
 }
 @media (max-width: 768px) {
   .table-container {
