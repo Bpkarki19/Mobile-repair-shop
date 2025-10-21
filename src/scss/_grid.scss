@@ -13,10 +13,10 @@
   }
 
   .grid {
-    width: 95%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-gap: 35px;
+    grid-gap: 50px;
   }
 
   .grid__item {

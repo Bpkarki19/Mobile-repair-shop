@@ -62,3 +62,37 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.getElementById('toggle__button--second');
+  const moreBrands = document.querySelectorAll('.grid__item__second--hidden');
+  console.log(moreBrands);
+  //moreBrands is a NodeList of all elements with the class 'grid-item' and 'hidden'. it behaves like an array of DOM elements.
+
+  if (toggleButton) {
+    toggleButton.addEventListener('click', () => {
+      const isHidden =
+        moreBrands[0] &&
+        moreBrands[0].classList.contains('grid__item__second--hidden');
+      console.log(moreBrands[0]);
+      console.log(isHidden);
+      //1. trying to access the first element in that array.
+      //2. If the first operand (moreBrands[0]) is truthy, then the second operand (moreBrands[0].classList.contains('hidden')) is evaluated.
+      //3. This part will only be evaluated if moreBrands[0] is truthy (due to the && operator).
+
+      moreBrands.forEach((brand) => {
+        // iterating over each element in the moreBrands NodeList.
+        if (isHidden) {
+          brand.classList.remove('grid__item__second--hidden');
+          brand.classList.add('grid__item--second');
+          toggleButton.querySelector('span').textContent = 'Show Less';
+        } else {
+          brand.classList.remove('grid__item--second');
+          brand.classList.add('grid__item__second--hidden');
+
+          toggleButton.querySelector('span').textContent = 'Show More';
+        }
+      });
+    });
+  }
+});
