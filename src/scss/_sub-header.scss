@@ -25,10 +25,12 @@
   display: flex;
   font-size: 28px;
   font-weight: bold;
+  line-height: 40px;
+  letter-spacing: -0.6px;
   margin: 0 0 24px 0;
   position: relative;
   padding-left: 12px;
-  color: #7e7e82;
+  color: #1b1c21;
 }
 
 .title::before {
@@ -57,5 +59,10 @@
   .icon--first,
   .icon--second {
     padding-right: 42px;
+    color: #1b1c21;
+    font-weight: 500;
+    font-size: medium;
+    line-height: 24px;
+    letter-spacing: -0.2px;
   }
 }

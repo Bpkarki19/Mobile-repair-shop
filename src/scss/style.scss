@@ -13,11 +13,16 @@
 @use 'footer';
 @use 'copyright';
 
+@font-face {
+  font-family: 'TTLakesCustom';
+  src: url('../fonts/TT\ Lakes\ Neue\ Trial\ DemiBold.ttf') format('truetype');
+}
+
 body {
+  font-family: 'TTLakesCustom';
   display: flex;
   padding: 0px;
   margin: 0;
-  font-family: Comic, sans-serif;
   background-color: $bgColor;
   color: $text;
 }

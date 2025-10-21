@@ -1,10 +1,18 @@
 @media (min-width: 768px), (min-width: 1120px) {
-  small {
+  .copyright {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 5px;
+    padding: 83px 21px 21px 21px;
+  }
+
+  .copyright span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
   }
 }

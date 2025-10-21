@@ -1,5 +1,19 @@
 @use 'variable' as *;
-
+.servicePrice__heading h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'TTLakesCustom';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #7e7e82;
+  padding-left: 32px;
+}
 .swiper__slide--table {
   position: relative;
   width: 228px;
@@ -63,6 +77,7 @@ br:nth-of-type(6) {
   width: 16px;
   height: 16px;
 }
+
 @media (max-width: 768px) {
   .table-container {
     display: none;
@@ -71,19 +86,12 @@ br:nth-of-type(6) {
 
 @media (min-width: 1120px), (min-width: 768px) {
   .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin: 40px auto;
     border-radius: 8px;
-    padding: 30px;
-  }
-
-  h2 {
-    font-size: 26px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    padding: 0 32px 0 32px;
   }
 
   .price-table {
@@ -94,7 +102,10 @@ br:nth-of-type(6) {
 
   .price-table th,
   .price-table td {
-    padding: 18px 0;
+    text-align: left;
+
+    padding: 18px 0 16px 50px;
+
     border-bottom: 1px solid #eee;
   }
 
@@ -108,7 +119,9 @@ br:nth-of-type(6) {
   .price-table td {
     font-size: 16px;
     color: #555;
+
     background-color: white;
+
     padding-left: 50px;
   }
 
@@ -157,5 +170,9 @@ br:nth-of-type(6) {
     fill: #fff;
     width: 16px;
     height: 16px;
+  }
+
+  .table__heading {
+    padding: 0px;
   }
 }

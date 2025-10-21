@@ -33,6 +33,14 @@
     align-items: center;
   }
 
+  .grid__item--second span {
+    font-family: 'TTLakesCustom';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+
   .grid__item--second > :first-child {
     position: absolute;
     top: 0;

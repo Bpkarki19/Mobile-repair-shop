@@ -1,32 +1,39 @@
 .notes {
-  margin-top: 40px;
   font-size: 14px;
   color: #777;
   line-height: 1.6;
-  padding-top: 20px;
   border-top: 1px solid #eee;
+  padding-left: 32px;
 }
 
 .commercial-offer {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1b1c21;
+  padding-left: 32px;
   align-items: center;
   gap: 8px;
-  color: #e91e63;
-  font-weight: 600;
   text-decoration: none;
   margin-top: 20px;
   font-size: 16px;
   transition: color 0.3s ease;
 }
 
+.commercial-offer img {
+  margin-left: 95px;
+}
+
 .commercial-offer:hover {
   color: #d81b60;
 }
 
-.commercial-offer svg {
-  fill: #e91e63;
-  width: 18px;
-  height: 18px;
+.commercial-offer img {
+  fill: #ff3e79;
+  width: 24px;
+  height: 24px;
   transition: fill 0.3s ease;
 }
 
