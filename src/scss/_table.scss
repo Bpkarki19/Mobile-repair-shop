@@ -1,48 +1,4 @@
 @use 'variable' as *;
-.servicePrice__heading h2 {
-  font-size: 26px;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: 'TTLakesCustom';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #7e7e82;
-  padding-left: 32px;
-}
-.swiper__slide--table {
-  position: relative;
-  width: 228px;
-  height: auto;
-  background-color: #fff;
-  justify-content: flex-start;
-  text-align: left;
-  padding: 16px;
-}
-
-.swiper__slide--table br:nth-of-type(1),
-br:nth-of-type(3),
-br:nth-of-type(5) {
-  color: $deemText;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0px;
-}
-
-.swiper__slide--table br:nth-of-type(2),
-br:nth-of-type(4),
-br:nth-of-type(6) {
-  color: $darkText;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.2px;
-}
 
 .order__button--second {
   background-color: #e91e63;
@@ -68,6 +24,36 @@ br:nth-of-type(6) {
   width: 32px;
 }
 
+.card {
+  position: relative;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 16px;
+}
+.card li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.card > :nth-child(1),
+.card > :nth-child(3),
+.card > :nth-child(5) {
+  color: #7e7e82;
+  padding-bottom: 4px;
+}
+
+.card > :nth-child(2),
+.card > :nth-child(4) {
+  padding-bottom: 20px;
+}
+
 .order__button--second:hover {
   background-color: #d81b60;
 }
@@ -79,71 +65,12 @@ br:nth-of-type(6) {
 }
 
 @media (max-width: 768px) {
-  .table-container {
+  table {
     display: none;
   }
 }
 
 @media (min-width: 1120px), (min-width: 768px) {
-  .table-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-radius: 8px;
-    padding: 0 32px 0 32px;
-  }
-
-  .price-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-
-  .price-table th,
-  .price-table td {
-    text-align: left;
-
-    padding: 18px 0 16px 50px;
-
-    border-bottom: 1px solid #eee;
-  }
-
-  .price-table th {
-    font-weight: 600;
-    color: #666;
-    text-transform: uppercase;
-    font-size: 14px;
-  }
-
-  .price-table td {
-    font-size: 16px;
-    color: #555;
-
-    background-color: white;
-
-    padding-left: 50px;
-  }
-
-  .price-table tr:last-child td {
-    border-bottom: none;
-  }
-
-  .service-name {
-    font-weight: 500;
-  }
-
-  .price {
-    font-weight: 600;
-    color: #333;
-    width: 150px;
-  }
-
-  .duration {
-    color: #777;
-    width: 120px;
-  }
-
   .order-button {
     background-color: #e91e63;
     color: #fff;
@@ -172,7 +99,40 @@ br:nth-of-type(6) {
     height: 16px;
   }
 
-  .table__heading {
-    padding: 0px;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    padding-left: 32px;
+  }
+
+  td,
+  th {
+    border-bottom: 1px solid #eaeaea;
+    text-align: left;
+    padding: 23px 0 23px 24px;
+  }
+
+  th {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
+  }
+
+  td {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+  }
+
+  tr:nth-child(n + 2) {
+    background-color: white;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
   }
 }

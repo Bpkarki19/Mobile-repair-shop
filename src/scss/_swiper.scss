@@ -4,7 +4,6 @@
   padding-left: 16px;
   overflow: hidden;
   width: 100%;
-  height: auto;
 }
 .swiper-wrapper {
   position: relative;
@@ -17,10 +16,6 @@
 
 .swiper-slide {
   flex: 0 0 240px;
-  width: 240px !important;
-  height: 50px;
-  max-width: 240px;
-  min-width: 240px;
   box-sizing: border-box;
   flex-direction: row;
   align-items: center;
@@ -35,8 +30,8 @@
   display: flex;
   position: relative;
   display: flex;
-  width: 240px;
-  height: 160px;
+  width: 300px;
+  height: 200px;
   background-color: #fff;
 }
 .swiper-slide--second #go__logo {
@@ -47,6 +42,14 @@
   width: 40px;
   padding-right: 10px;
   padding-bottom: 10px;
+}
+
+.service--text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 .swiper-pagination {
   position: absolute;

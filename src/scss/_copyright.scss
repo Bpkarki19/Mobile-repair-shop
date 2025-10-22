@@ -1,3 +1,16 @@
+@media (max-width: 768px) {
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 @media (min-width: 768px), (min-width: 1120px) {
   .copyright {
     display: flex;
