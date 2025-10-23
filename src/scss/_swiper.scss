@@ -26,6 +26,17 @@
   background-color: white;
 }
 
+.swiper__slide--first {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 72px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding: 0 16px;
+  gap: 24px;
+}
+
 .swiper-slide--second {
   display: flex;
   position: relative;
