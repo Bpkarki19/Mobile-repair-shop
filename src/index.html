@@ -122,10 +122,9 @@
             </div>
           </div>
           <nav class="tabs-nav">
-            <button class="tab-button active">Brands We Repair</button>
-            <button class="tab-button">Additional Services</button>
-            <button class="tab-button">Pricing</button>
-            <button class="tab-button">Special Offers</button>
+            <a href="#various-brand"><button class="tab-button active">Brands We Repair</button></a>
+            <a href="#pricing"><button class="tab-button">Pricing</button></a>
+            <a href="#commercial-offer"><button class="tab-button">Special Offers</button></a>
             <button class="tab-button">Our Locations</button>
             <button class="tab-button">Special price</button>
             <button class="tab-button">Reviews</button>
@@ -158,9 +157,9 @@
             <div class="image__section">
               <img src="./img/image.png" class="image"alt="CPS Office Sign" />
             </div> <div class="heading">
-          <h1>Repair of equipments of various brands.</h1>
+          <h1 id="various-brand">Repair of equipments of various brands.</h1>
         </div>
-        <div class="swiper" pagination="true" pagination-clickable="true">
+        <div class="swiper"  pagination="true" pagination-clickable="true">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="./img/1.png" />
@@ -201,7 +200,7 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-        <div class="grid-wrapper">
+        <div class="grid-wrapper" id="various-brand">
           <div class="grid">
             <div class="grid__item">
               <img src="./img/1.png" />
@@ -385,10 +384,10 @@
         </div>
 
         <div class="heading">
-          <h1>Service Prices</h1>
+          <h1 id="pricing">Service Prices</h1>
         </div>
         <!--Table-swiper-->
-        <div class="swiper" pagination="true" pagination-clickable="true">
+        <div class="swiper"  pagination="true" pagination-clickable="true">
           <div class="swiper-wrapper">
             <div class="swiper-slide swiper__slide--table">
               <div class="card">
@@ -457,7 +456,7 @@
           <div class="swiper-pagination"></div>
         </div>
         <!--price-table-->
-        <table>
+        <table id="pricing">
           <tr>
             <th>Repair Service</th>
             <th>Price</th>
@@ -533,7 +532,7 @@
             request.
           </p>
 
-          <div class="commercial-offer">
+          <div class="commercial-offer" id="commercial-offer">
             <span>Get a Commercial
               <span>
                 proposal 
