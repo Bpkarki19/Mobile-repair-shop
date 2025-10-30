@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/index.js"></script>
+    <title>Mobile repair shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <script defer="defer" src="./js/bundle.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <main class="main" id="main">
+      <div class="sidebar" id="sidebar">
+        <header class="sidebar__header">
+          <button class="icon-button" id="cancel-button">
+            <img src="./img/cancel.svg" alt="cancel">
+          </button>
+          <a href="#" class="logo">
+            <img src="./img/cps_logo.svg" alt="logo">
+          </a>
+          <button class="icon-button">
+            <img src="./img/search_icon.svg" alt="search">
+          </button>
+        </header>
+
+        <div class="sidebar__content">
+          <ul class="sidebar-list">
+            <li class="active"><a href="#">Equipment Repair</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Corporate Clients</a></li>
+            <li><a href="#">Equipment Sellers</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Manufacturers</a></li>
+            <li><a href="#">Our Service Centers</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </div>
+
+        <footer class="sidebar__footer">
+          <div class="icon-bar">
+            <button class="icon-button">
+              <img src="./img/call.svg" alt="call">
+            </button>
+            <button class="icon-button">
+              <img src="./img/chat.svg" alt="chat">
+            </button>
+            <button class="icon-button">
+              <img src="./img/profile.svg" alt="profile">
+            </button>
+          </div>
+          <a class="email" href="mailto:mail@cps.com">mail@cps.com</a>
+          <a class="phone" href="tel:88008908900">8 800 890 8900</a>
+          <div class="language-switcher">
+            <a href="#">RU</a>
+            <a href="#" class="active">EN</a>
+            <a href="#">CH</a>
+          </div>
+        </footer>
+      </div>
+      <div class="container">
+        
+        <header class="header">
+          <div class="header__left">
+            
+            <button id="ham-burger" class="icon-button">
+              <img src="./img/ham_burger.svg" alt="Menu">
+            </button>
+            <div class="divider--left"></div>
+            <img class="header__logo" src="./img/cps_logo.svg" alt="CPS Logo">
+          </div>
+
+          <div class="header__right">
+            
+            <button class="call">
+              <img src="./img/call.svg" alt="Call">
+            </button>
+            <button class="chat">
+              <img src="./img/chat.svg" alt="Chat">
+            </button>
+            <button class="profile">
+              <img src="./img/profile.svg" alt="Profile">
+            </button>
+
+            
+            <div class="divider"></div>
+
+            <span class="leave__request">Leave a request</span>
+            <button class="icon-button">
+              <img src="./img/ic_repair.svg" alt="Repair Status">
+            </button>
+            <span class="repair__status">Repair Status</span>
+            <button class="icon-button">
+              <img src="./img/search_icon.svg" alt="Search">
+            </button>
+          </div>
+        </header>
+        <div class="content">
+          <div class="sub-header">
+            <h1 class="title">Services and support</h1>
+
+            
+            <div class="icon">
+              <div class="icon--first">
+                <span>Submit a request</span>
+                <button class="icon-button">
+                  <img src="./img/ic_repair.svg" alt="Repair Status">
+                </button>
+              </div>
+
+              <div class="icon--second">
+                <span>Repair Status</span>
+                <button class="icon-button">
+                  <img src="./img/search_icon.svg" alt="Search">
+                </button>
+              </div>
+            </div>
+          </div>
+          <nav class="tabs-nav">
+            <a href="#various-brand"><button class="tab-button active">Brands We Repair</button></a>
+            <a href="#pricing"><button class="tab-button">Pricing</button></a>
+            <a href="#commercial-offer"><button class="tab-button">Special Offers</button></a>
+            <button class="tab-button">Our Locations</button>
+            <button class="tab-button">Special price</button>
+            <button class="tab-button">Reviews</button>
+            <button class="tab-button">About us</button>
+          </nav>
+          <div class="text-and-image">
+            <div class="text__section">
+              <p class="text__for__mobile">
+                We are an authorized service center for Dell equipment repair.
+                Only with us can you repair your Dell laptop with an official
+                manufacturer's warranty.
+              </p>
+              <p class="text__for__tablet">
+                We have been successfully operating since 1992 and have earned a
+                reputation as a reliable partner. We have all the necessary
+                certificates and licenses to carry out repair work on Dell
+                equipment.
+              </p>
+              <p class="more-text" id="more-text">
+                Our specialists undergo regular training and certification at
+                the manufacturer's training centers, which allows us to keep up
+                to date with the latest technologies and methods of repairing
+                Dell equipment.
+              </p>
+              <a href="#" class="read-more" id="read-more">
+                <img src="./img/expand_arrow.svg" alt="expand"> <span id="read__more--btn">Read More
+              </span></a>
+              
+            </div>
+            <div class="image__section">
+              <img src="./img/image.png" class="image" alt="CPS Office Sign">
+            </div> <div class="heading">
+          <h1 id="various-brand">Repair of equipments of various brands.</h1>
+        </div>
+        <div class="swiper" pagination="true" pagination-clickable="true">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper__slide--first">
+              <img src="./img/1.png">
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper__slide--first">
+              <img src="./img/2.png">
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper__slide--first">
+              <img src="./img/3.png">
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper__slide--first">
+              <img src="./img/4.png">
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper__slide--first">
+              <img src="./img/5.png">
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper__slide--first">
+              <img src="./img/6.png">
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper__slide--first">
+              <img src="./img/7.png">
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper__slide--first">
+              <img src="./img/8.png">
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/9.png">
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="grid-wrapper" id="various-brand">
+          <div class="grid">
+            <div class="grid__item">
+              <img src="./img/1.png">
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item">
+              <img src="./img/2.png">
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item">
+              <img src="./img/3.png">
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item">
+              <img src="./img/4.png">
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item">
+              <img src="./img/5.png">
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item">
+              <img src="./img/6.png">
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item">
+              <img src="./img/7.png">
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item">
+              <img src="./img/8.png">
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item">
+              <img src="./img/9.png">
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item--hidden">
+              <img src="./img/6.png">
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item--hidden">
+              <img src="./img/7.png">
+              <img src="./img/go.svg">
+            </div>
+            <div class="grid__item--hidden">
+              <img src="./img/1.png">
+              <img src="./img/go.svg">
+            </div>
+          </div>
+
+          <button id="toggle__button" class="read-more">
+            <img src="./img/read_more.svg" alt="Read More">
+            <span>Show More</span>
+          </button>
+        </div>
+        <div class="heading">
+          <h1>Repair of various types of Equipments.</h1>
+        </div>
+        <div class="swiper" pagination="true" pagination-clickable="true">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--second">
+              <span class="service--text">Laptop repair</span>
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper-slide--second">
+              <span class="service--text">Tablet repair</span>
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper-slide--second">
+              <span class="service--text">PC repair</span>
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper-slide--second">
+              <span class="service--text">Monitor repair</span>
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper-slide--second">
+              <span class="service--text">Radio repair</span>
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper-slide--second">
+              <span class="service--text">CPU repair</span>
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper-slide--second">
+              <span class="service--text">GPU repair</span>
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper-slide--second">
+              <span class="service--text">Lcd repair</span>
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+            <div class="swiper-slide swiper-slide--second">
+              <span class="service--text">Mobile repair</span>
+              <img id="go__logo" src="./img/go.svg">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        
+        <div class="grid__wrapperSecond">
+          <div class="grid__second">
+            <div class="grid__item--second">
+              <span>Laptop repair</span>
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item--second">
+              <span>Monitor repair</span>
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item--second">
+              <span>Tablet repair</span>
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item--second">
+              <span>PC repair</span>
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item--second">
+              <span>CPU repair</span>
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item--second">
+              <span>Speaker repair</span>
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item--second">
+              <span>MAC Book repair</span>
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item--second">
+              <span>PC upgrade</span>
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item__second--hidden">
+              <span>Speaker repair</span>
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item__second--hidden">
+              <span>PC update</span>
+              <img src="./img/go.svg">
+            </div>
+
+            <div class="grid__item__second--hidden">
+              <span>Hardware change</span>
+              <img src="./img/go.svg">
+            </div>
+            <div class="grid__item__second--hidden">
+              <span>Display change</span>
+              <img src="./img/go.svg">
+            </div>
+          </div>
+
+          <button id="toggle__button--second" class="read-more">
+            <img src="./img/read_more.svg" alt="Read More">
+            <span>Show More</span>
+        </button>
+
+        </div>
+
+        <div class="heading">
+          <h1 id="pricing">Service Prices</h1>
+        </div>
+        
+        <div class="swiper" pagination="true" pagination-clickable="true">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper__slide--table">
+              <div class="card">
+                <li>Repair Service</li>
+                <li>Diagnostics</li>
+                <li>Price</li>
+                <li>Free</li>
+                <li>Duration</li>
+                <li>30 min</li>
+                <li><a href="#" class="order__button--second">Order<img src="./img/dropdown.svg">
+                </a></li>
+              </div>
+              
+            </div>
+            <div class="swiper-slide swiper__slide--table">
+              <div class="card">
+                <li>Repair Service</li>
+                <li>Display replacement</li>
+                <li>Price</li>
+                <li>1000</li>
+                <li>Duration</li>
+                <li>30-120 min</li>
+                <li><a href="#" class="order__button--second">Order<img src="./img/dropdown.svg">
+                </a></li>
+              </div>
+            </div>
+            <div class="swiper-slide swiper__slide--table">
+              <div class="card">
+                <li>Repair Service</li>
+                <li>polyphonic Speaker Replacement</li>
+                <li>Price</li>
+                <li>1000</li>
+                <li>Duration</li>
+                <li>30-120 min</li>
+                <li><a href="#" class="order__button--second">Order<img src="./img/dropdown.svg">
+                </a></li>
+              </div>
+            </div>
+            <div class="swiper-slide swiper__slide--table">
+              <div class="card">
+                <li>Repair Service</li>
+                <li>Testing with technical report</li>
+                <li>Price</li>
+                <li>1000</li>
+                <li>Duration</li>
+                <li>30-120 min</li>
+                <li><a href="#" class="order__button--second">Order<img src="./img/dropdown.svg">
+                </a></li>
+              </div>
+            </div>
+            <div class="swiper-slide swiper__slide--table">
+              <div class="card">
+                <li>Repair Service</li>
+                <li>software replacement</li>
+                <li>Price</li>
+                <li>1000</li>
+                <li>Duration</li>
+                <li>30-120 min</li>
+                <li><a href="#" class="order__button--second">Order<img src="./img/dropdown.svg">
+                </a></li>
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        
+        <table id="pricing">
+          <tr>
+            <th>Repair Service</th>
+            <th>Price</th>
+            <th>Duration</th>
+          </tr>
+          <tr>
+            <td>Diagnostics</td>
+            <td>Free</td>
+            <td>30 min</td>
+            <td>
+                <a href="#" class="order-button">Order
+                  <img src="./img/dropdown.svg">
+                </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Display replacement</td>
+            <td>1000 &#8381;</td>
+            <td>30-120 min min</td>
+            <td>
+              <a href="#" class="order-button">
+                Order
+                <img src="./img/dropdown.svg">
+              </a>
+                  
+            </td>
+          </tr>
+          <tr>
+            <td>Polyphonic Speaker replacement</td>
+            <td>1000 &#8381;</td>
+            <td>30-120 min</td>
+            <td>
+              <a href="#" class="order-button">
+                Order
+                <img src="./img/dropdown.svg">
+              </a>
+                  
+            </td>
+          </tr>
+          <tr>
+            <td>Testing with technical report</td>
+            <td>1000 &#8381;</td>
+            <td>30-120 min min</td>
+            <td>
+              <a href="#" class="order-button">
+                Order
+                <img src="./img/dropdown.svg">
+              </a>
+                  
+            </td>
+          </tr>
+          <tr>
+            <td>Software replacement</td>
+            <td>1000 &#8381;</td>
+            <td>30-120 min min</td>
+            <td>
+              <a href="#" class="order-button">
+                Order
+                <img src="./img/dropdown.svg">
+              </a>
+                  
+            </td>
+          </tr>
+          
+
+        </table>
+
+        <footer>
+          <p class="notes">
+            All prices include VAT. The repair cost is for a single service.<br> To
+            receive a commercial offer for ongoing maintenance,<br> please leave a
+            request.
+          </p>
+
+          <div class="commercial-offer" id="commercial-offer">
+            <span>Get a Commercial
+              <span>
+                proposal 
+                <img src="./img/right arrow.svg">
+              </span>
+            </span>
+          </div>
+          
+        </footer>
+        <small class="copyright">
+            <span>© 2019 <br> CPS Developed by Bipn</span>
+            <br> 
+            <span>Privacy policy</span>
+            <br> <span>The information on this page is not a public offer.</span>
+            
+          </small>
+      </div>
+    </div></div></main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+
+        loop: true,
+        slidesPerView: 'auto',
+        
+        spaceBetween: 30,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        }
+      });
+    </script>
+  </body>
+</html>
